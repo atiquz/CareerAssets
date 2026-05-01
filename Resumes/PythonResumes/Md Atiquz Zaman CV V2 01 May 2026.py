@@ -2,7 +2,7 @@ from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, ListFlowabl
 from reportlab.lib.styles import getSampleStyleSheet
 from reportlab.lib.pagesizes import A4
 
-doc_path = "/mnt/data/Md_Atiquz_Zaman_Final_Resume_Final_Update_v4.pdf"
+doc_path = "/mnt/data/Md_Atiquz_Zaman_Final_Resume_Final_Update_v6.pdf"
 
 styles = getSampleStyleSheet()
 story = []
@@ -19,16 +19,17 @@ story.append(Paragraph(
 story.append(Paragraph("Location: Goalpara, Assam, India | Open to Relocation Across India & Remote Work", styles['Normal']))
 story.append(Spacer(1, 4))
 
-# Professional Summary (updated)
+# Professional Summary (with intro paragraph restored)
 story.append(Paragraph("<b>Professional Summary</b>", styles['Heading2']))
 story.append(Paragraph(
-    "I am Md Atiquz Zaman, currently pursuing a BS Degree in Data Science and Applications from IIT Madras which is ranked #1 in India in the NIRF rankings.",
+    "I am Md Atiquz Zaman, currently pursuing a BS Degree in Data Science and Applications from IIT Madras which is ranked #1 in India in the NIRF rankings. "
+    "I completed my 10th and 12th under Assam board as part of the Indian formal education.",
     styles['Normal']
 ))
 story.append(Spacer(1, 6))
 story.append(Paragraph(
     "I specialize in customer support, HR recruitment, office administration, social media management, e-commerce operations, travel management, and digital marketing. "
-    "I can manage CRM systems, handle customer queries, support hiring processes, manage social media engagement, handle e-commerce operations, run marketing campaigns, and coordinate travel planning and bookings. "
+    "I have hands-on experience managing CRM systems, resolving customer queries, supporting hiring processes, handling social media engagement, overseeing e-commerce operations, executing marketing campaigns, and coordinating travel planning and bookings. "
     "I am detail-oriented, adaptable, and capable of working efficiently in both in-office and remote environments.",
     styles['Normal']
 ))
